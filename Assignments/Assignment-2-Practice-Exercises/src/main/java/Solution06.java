@@ -20,8 +20,43 @@ Handle situations where the program returns a negative number by stating that th
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Jenna Bates
  */
+
+
+/*
+Pseudocode/Planning:
+prompt(input) for age to be stored in an int (output)
+convert input to int
+prompt(input) for retirement age to be stored in an int (output)
+convert input to int
+calculate difference (retirementAge - age)
+print difference (output)
+
+
+methods:
+prompt building method
+user input request method
+delta calculator method
+
+
+ */
 public class Solution06
 {
+
+
+    public static int calcDelta(int x, int y)
+    {
+        return Math.abs(x - y);
+    }
+    public static String makeInputRequestString(String request)
+    {
+        return "Please input " + request;
+    }
+    private static int getUserInt(String request)
+    {
+        System.out.println(makeInputRequestString(request));
+        return kb.nextInt();
+    }
+
     public static void main(String[] args)
     {
 

@@ -24,7 +24,6 @@ public class DistanceFormula
 
     private static double formatDouble(double num)
     {
-
         return Double.parseDouble( df.format(num) );
     }
 
@@ -32,7 +31,6 @@ public class DistanceFormula
     {
         return formatDouble( (Math.sqrt( Math.pow( calcDelta(x1,y1) ,2) + Math.pow( calcDelta(x2,y2),2) )) );
     }
-
 
     public static String makeInputRequestString(String request)
     {
@@ -42,7 +40,6 @@ public class DistanceFormula
 
     private static double getUserDouble(String request)
     {
-
         System.out.println(makeInputRequestString(request));
         return kb.nextDouble();
     }
@@ -62,6 +59,5 @@ public class DistanceFormula
         System.out.println("First Coordinate:");
         double[] coord2 = coordReader();
         System.out.println("The distance between (" + coord1[0] + "," + coord1[1] + ") and (" + coord2[0] + "," + coord2[1] + ") is " + calcDistance(coord1[0],coord1[1],coord2[0],coord1[1]) + " units.");
-
     }
 }
