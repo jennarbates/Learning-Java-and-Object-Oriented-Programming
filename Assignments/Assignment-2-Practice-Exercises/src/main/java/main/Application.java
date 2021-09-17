@@ -57,28 +57,26 @@ public class Application
                 while(loopy == 0)
                 {
                     //exercise07.Challenge02
-                    System.out.println("Would you like your area in\n 1.Meters\n 2.Feet");
+                    double length = getUserDouble(" the length");
+                    double width = getUserDouble(" the width");
+                    System.out.println("Were those in\n 1.Meters\n 2.Feet");
                     int unitChoice = getUserInt(" your selection");
+                    double[] dimensions = method.getDimensions(length,width);
+                    double area = method.calcArea(dimensions);
                     while(unitChoice == 1 || unitChoice == 2)
                     {
                         switch (unitChoice)
                         {
                             //meters
                             case 1:
-                                double lengthM = getUserDouble(" the length in meters");
-                                double widthM = getUserDouble(" the width in meters");
-                                System.out.println("You entered dimensions of " + lengthM + " m by " + widthM + " m");
-                                double areaM = method.calcArea(lengthM, widthM);
-                                System.out.println("The area is " + areaM + " square meters.");
+                                System.out.println("You entered dimensions of " + length + " m by " + width + " m");
+                                System.out.println("The area is " + area + " square meters.");
                                 break;
 
                             //feet
                             case 2:
-                                double lengthFt = getUserDouble(" the length in feet");
-                                double widthFt = getUserDouble(" the width in feet");
-                                System.out.println("You entered dimensions of " + lengthFt + " ft by " + widthFt + " ft.");
-                                double areaFt = method.calcArea(lengthFt, widthFt);
-                                System.out.println("The area is " + areaFt + " square feet.");
+                                System.out.println("You entered dimensions of " + length + " ft by " + width + " ft.");
+                                System.out.println("The area is " + area + " square feet.");
                                 break;
                         }
                     }
