@@ -25,7 +25,7 @@ public class DistanceFormula
 
     public static double calcDistance(int x1, int y1, int x2, int y2)
     {
-        return Math.round(Math.sqrt(calcDelta(x1,y1) + Math.sqrt(calcDelta(x2,y2))));
+        return Math.round(Math.sqrt( Math.pow( calcDelta(x1,y1) ,2) + Math.pow( calcDelta(x2,y2),2) ) );
     }
 
     public static String makeInputRequestString(String request)
