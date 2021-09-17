@@ -48,9 +48,9 @@ public class Solution06
     private static final Scanner kb = new Scanner(System.in);
 
 
-    public static int calcDelta(int x, int y)
+    public static int calcDiff(int x, int y)
     {
-        return Math.abs(x - y);
+        return (x - y);
     }
 
     public static String makeInputRequestString(String request)
