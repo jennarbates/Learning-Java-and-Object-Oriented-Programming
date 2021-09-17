@@ -7,7 +7,6 @@ Write a program that asks the user to enter two 2d points
 and prints out the distance between those 2d points.
  */
 
-
 import java.util.Scanner;
 
 public class DistanceFormula
@@ -18,7 +17,7 @@ public class DistanceFormula
     private static final DecimalFormat df = new DecimalFormat("#.##");
 
 
-    public static double calcDelta(int x, int y)
+    public static double calcDelta(double x, double y)
     {
         return Math.abs(x - y);
     }
@@ -29,7 +28,7 @@ public class DistanceFormula
         return Double.parseDouble( df.format(num) );
     }
 
-    public static double calcDistance(int x1, int y1, int x2, int y2)
+    public static double calcDistance(double x1, double y1, double x2, double y2)
     {
         return formatDouble( (Math.sqrt( Math.pow( calcDelta(x1,y1) ,2) + Math.pow( calcDelta(x2,y2),2) )) );
     }
@@ -41,16 +40,16 @@ public class DistanceFormula
         //this makes unit testing easier since you can't do unit testing on anything that uses scanner since scanner is private
     }
 
-    private static int getUserDouble(String request)
+    private static double getUserDouble(String request)
     {
 
         System.out.println(makeInputRequestString(request));
-        return kb.nextInt();
+        return kb.nextDouble();
     }
 
-    private static int[] coordReader()
+    private static double[] coordReader()
     {
-        int[] coord = new int[2];
+        double[] coord = new double[2];
         coord[0] = getUserDouble("the x value");
         coord[1] = getUserDouble("the y value");
         return coord;
@@ -59,9 +58,9 @@ public class DistanceFormula
     public static void main(String[] args)
     {
         System.out.println("First Coordinate:");
-        int[] coord1 = coordReader();
+        double[] coord1 = coordReader();
         System.out.println("First Coordinate:");
-        int[] coord2 = coordReader();
+        double[] coord2 = coordReader();
         System.out.println("The distance between (" + coord1[0] + "," + coord1[1] + ") and (" + coord2[0] + "," + coord2[1] + ") is " + calcDistance(coord1[0],coord1[1],coord2[0],coord1[1]) + " units.");
 
     }
