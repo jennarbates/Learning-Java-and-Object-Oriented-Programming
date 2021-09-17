@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Solution06 {
+public class Solution06
+{
+    public static void main(String args[])
+    {
+        
+    }
 }

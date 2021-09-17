@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application' // the application plugin tells gradle you want the ability to run your code
+    //Remember to Load Gradle Changes whenever you make changes to this file
 }
 
 group 'COP3330'
@@ -10,10 +12,18 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.0'
 }
 
 test {
     useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
+}
+
+application {
+    mainClassName = "Solution06"
 }
