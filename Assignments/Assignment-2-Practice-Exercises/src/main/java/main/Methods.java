@@ -20,9 +20,9 @@ public class Methods
         return "Please input " + request;
     }
 
-    public double calcArea(double length, double width)
+    public double calcArea(double[] dimensions)
     {
-        return length*width;
+        return dimensions[0] * dimensions[1];
     }
 
     public double convertFtToMeters(double feet)
@@ -37,6 +37,7 @@ public class Methods
         dimensions[1] = width;
         return dimensions;
     }
+
 
 
 
