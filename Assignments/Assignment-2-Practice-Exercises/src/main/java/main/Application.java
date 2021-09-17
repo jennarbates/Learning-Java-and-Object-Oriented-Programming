@@ -22,9 +22,16 @@ public class Application
         System.out.println(method.makeInputRequestString(request));
         return kb.nextInt();
     }
+    private static double getUserDouble(String request)
+    {
+        System.out.println(method.makeInputRequestString(request));
+        return kb.nextDouble();
+    }
 
     public static void main(String[] args)
     {
+        //insert selection menu
+
         int userSelection = getUserInt(" your selection");
         switch(userSelection)
         {
@@ -49,6 +56,12 @@ public class Application
 
             //exercise07
             case 2:
+                double lengthFt = getUserDouble(" the length in feet");
+                double widthFt = getUserDouble(" the width in feet");
+
+                
+
+
         }
 
 
