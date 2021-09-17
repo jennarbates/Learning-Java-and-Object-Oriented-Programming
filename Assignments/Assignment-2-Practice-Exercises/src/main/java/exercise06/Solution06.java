@@ -1,4 +1,4 @@
-/*
+package exercise06;/*
 Exercise 6 - Retirement Calculator
 Your computer knows what the current year is, which means you can incorporate that into your programs. You just have to figure out how your programming language can provide you with that information.
 
@@ -25,7 +25,7 @@ Handle situations where the program returns a negative number by stating that th
 
 import java.time.LocalDate;
 import java.util.Scanner;
-
+import main.Methods;
 
 /*
 Pseudocode/Planning:
@@ -49,21 +49,12 @@ public class Solution06
 
     private static final Scanner kb = new Scanner(System.in);
     private static LocalDate currentDate = LocalDate.now(); // would this not be final because you might want to update it later since it is time?
+    private static Methods method = new Methods();
 
-
-    public static int calcDiff(int x, int y)
-    {
-        return (x - y);
-    }
-
-    public static String makeInputRequestString(String request)
-    {
-        return "Please input " + request;
-    }
 
     private static int getUserInt(String request)
     {
-        System.out.println(makeInputRequestString(request));
+        System.out.println(method.makeInputRequestString(request));
         return kb.nextInt();
     }
 
@@ -76,7 +67,7 @@ public class Solution06
 
         final int year = currentDate.getYear();
 
-        int ageDiff = calcDiff(retireAge, age);
+        int ageDiff = method.calcDiff(retireAge, age);
         if(ageDiff <= 0)
         {
             System.out.println("You have can already retire right now in " + year + "!");
