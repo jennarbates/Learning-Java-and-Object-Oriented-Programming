@@ -16,11 +16,14 @@ Challenge
 Handle situations where the program returns a negative number by stating that the user can already retire.
 */
 
+
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Jenna Bates
  */
 
+
+import java.util.Scanner;
 
 /*
 Pseudocode/Planning:
@@ -41,6 +44,8 @@ delta calculator method
  */
 public class Solution06
 {
+
+    private static final Scanner kb = new Scanner(System.in);
 
 
     public static int calcDelta(int x, int y)
@@ -63,6 +68,20 @@ public class Solution06
 
     public static void main(String[] args)
     {
+        int age = getUserInt(" your age");
+        int retireAge = getUserInt(" the age you would like to retire");
+
+        int ageDiff = calcDelta(age, retireAge);
+        System.out.println("You have " + ageDiff + " years left until you retire");
+
+        final int year = 2021;
+        System.out.println("It's " + year + " so you can retire in " + (year + ageDiff) + ".");
+
+
+
+
+
+
 
     }
 }
