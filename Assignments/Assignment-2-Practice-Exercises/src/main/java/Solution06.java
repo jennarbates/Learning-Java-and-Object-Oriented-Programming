@@ -27,7 +27,6 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 
-
 /*
 Pseudocode/Planning:
 prompt(input) for age to be stored in an int (output)
@@ -49,7 +48,7 @@ public class Solution06
 {
 
     private static final Scanner kb = new Scanner(System.in);
-    private static LocalDate currentDate = LocalDate.now();
+    private static LocalDate currentDate = LocalDate.now(); // would this not be final because you might want to update it later since it is time?
 
 
     public static int calcDiff(int x, int y)
@@ -87,14 +86,6 @@ public class Solution06
             System.out.println("You have " + ageDiff + " years left until you retire");
             System.out.println("It's " + year + " so you can retire in " + (year + ageDiff) + ".");
         }
-
-
-
-
-
-
-
-
 
 
     }
