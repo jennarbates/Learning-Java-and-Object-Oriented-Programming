@@ -23,7 +23,10 @@ Handle situations where the program returns a negative number by stating that th
  */
 
 
+import java.time.LocalDate;
 import java.util.Scanner;
+
+
 
 /*
 Pseudocode/Planning:
@@ -46,6 +49,7 @@ public class Solution06
 {
 
     private static final Scanner kb = new Scanner(System.in);
+    private static LocalDate currentDate = LocalDate.now();
 
 
     public static int calcDiff(int x, int y)
@@ -71,7 +75,8 @@ public class Solution06
         int age = getUserInt(" your age");
         int retireAge = getUserInt(" the age you would like to retire");
 
-        final int year = 2021;
+        final int year = currentDate.getYear();
+
         int ageDiff = calcDiff(retireAge, age);
         if(ageDiff <= 0)
         {
