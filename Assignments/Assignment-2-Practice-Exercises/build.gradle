@@ -25,5 +25,5 @@ run {
 }
 
 application {
-    mainClassName = "Application"
+    mainClassName = "main.Application"
 }
