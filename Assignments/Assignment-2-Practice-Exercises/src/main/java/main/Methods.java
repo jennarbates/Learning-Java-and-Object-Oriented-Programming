@@ -24,7 +24,7 @@ public class Methods
     {
         return feet * 0.09290304;
     }
-    
+
 
 
 }

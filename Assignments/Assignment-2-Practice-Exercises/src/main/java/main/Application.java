@@ -59,7 +59,8 @@ public class Application
                 double lengthFt = getUserDouble(" the length in feet");
                 double widthFt = getUserDouble(" the width in feet");
 
-
+                double lengthM = method.convertFtToMeters(lengthFt);
+                double widthM = method.convertFtToMeters(widthFt);
 
 
 
