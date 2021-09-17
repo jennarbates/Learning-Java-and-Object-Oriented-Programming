@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application' // the application plugin tells gradle you want the ability to run your code
+    //Remember to Load Gradle Changes whenever you make changes to this file
+}
+
+group 'COP3330'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
+}
+
+application {
+    mainClassName = "exercise03.Solution03"
+}
