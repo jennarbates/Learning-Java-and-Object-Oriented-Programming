@@ -20,4 +20,11 @@ public class Methods
         return length*width;
     }
 
+    public static double convertFtToMeters(double feet)
+    {
+        return feet * 0.09290304;
+    }
+    
+
+
 }
