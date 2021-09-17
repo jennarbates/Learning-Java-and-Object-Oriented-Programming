@@ -15,4 +15,9 @@ public class Methods
 
     }
 
+    public static double findArea(double length, double width)
+    {
+        return length*width;
+    }
+
 }
