@@ -71,12 +71,20 @@ public class Solution06
         int age = getUserInt(" your age");
         int retireAge = getUserInt(" the age you would like to retire");
 
-        int ageDiff = calcDiff(age, retireAge);
-        
-        System.out.println("You have " + ageDiff + " years left until you retire");
-
         final int year = 2021;
-        System.out.println("It's " + year + " so you can retire in " + (year + ageDiff) + ".");
+        int ageDiff = calcDiff(retireAge, age);
+        if(ageDiff <= 0)
+        {
+            System.out.println("You have can already retire right now in " + year + "!");
+        }
+        else
+        {
+            System.out.println("You have " + ageDiff + " years left until you retire");
+            System.out.println("It's " + year + " so you can retire in " + (year + ageDiff) + ".");
+        }
+
+
+
 
 
 
