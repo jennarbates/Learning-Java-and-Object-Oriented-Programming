@@ -30,6 +30,14 @@ public class Methods
         return feet * FEET_TO_METERS_CONVERSION;
     }
 
+    public double[] getDimensions(double length, double width)
+    {
+        double[] dimensions = new double[2];
+        dimensions[0] = length;
+        dimensions[1] = width;
+        return dimensions;
+    }
+
 
 
 

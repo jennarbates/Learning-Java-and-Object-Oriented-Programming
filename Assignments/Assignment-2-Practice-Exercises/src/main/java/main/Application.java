@@ -56,6 +56,7 @@ public class Application
                 int loopy = 0;
                 while(loopy == 0)
                 {
+                    //exercise07.Challenge02
                     System.out.println("Would you like your area in\n 1.Meters\n 2.Feet");
                     int unitChoice = getUserInt(" your selection");
                     while(unitChoice == 1 || unitChoice == 2)
@@ -109,6 +110,8 @@ public class Application
 
                         //no to conversion
                         case 2:
+                            System.out.println("Okay! Have a good day!");
+                            loopy = 1;
                             break;
                         default:
                             System.out.println("Sorry that's an invalid option. Exiting...");
@@ -126,8 +129,7 @@ public class Application
 
 
 
-                double areaM = method.calcArea(lengthM, widthM);
-                System.out.println("The area in meters is " + areaM + " square meters.");
+
 
 
 
