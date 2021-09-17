@@ -71,7 +71,8 @@ public class Solution06
         int age = getUserInt(" your age");
         int retireAge = getUserInt(" the age you would like to retire");
 
-        int ageDiff = calcDelta(age, retireAge);
+        int ageDiff = calcDiff(age, retireAge);
+        
         System.out.println("You have " + ageDiff + " years left until you retire");
 
         final int year = 2021;
