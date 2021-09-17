@@ -9,21 +9,22 @@ public class Methods
         return (x - y);
     }
 
-    public static String makeInputRequestString(String request)
+    public String makeInputRequestString(String request)
     {
         return "Please input " + request;
 
     }
 
-    public static double findArea(double length, double width)
+    public double calcArea(double length, double width)
     {
         return length*width;
     }
 
-    public static double convertFtToMeters(double feet)
+    public double convertFtToMeters(double feet)
     {
         return feet * 0.09290304;
     }
+
 
 
 

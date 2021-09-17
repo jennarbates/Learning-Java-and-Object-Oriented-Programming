@@ -62,6 +62,10 @@ public class Application
                 double lengthM = method.convertFtToMeters(lengthFt);
                 double widthM = method.convertFtToMeters(widthFt);
 
+                double areaFt = method.calcArea(lengthFt, widthFt);
+                double areaM = method.calcArea(lengthM, widthM);
+
+                
 
 
         }
