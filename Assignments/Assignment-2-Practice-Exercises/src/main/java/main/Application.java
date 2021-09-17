@@ -56,16 +56,26 @@ public class Application
 
             //exercise07
             case 2:
+
                 double lengthFt = getUserDouble(" the length in feet");
                 double widthFt = getUserDouble(" the width in feet");
+                System.out.println("You entered dimensions of " + lengthFt + " ft by " + widthFt + " ft.");
+
+                double areaFt = method.calcArea(lengthFt, widthFt);
+                System.out.println("The area is " + areaFt + " square feet.");
 
                 double lengthM = method.convertFtToMeters(lengthFt);
                 double widthM = method.convertFtToMeters(widthFt);
 
-                double areaFt = method.calcArea(lengthFt, widthFt);
                 double areaM = method.calcArea(lengthM, widthM);
+                System.out.println("The area in meters is " + areaM + " square meters.");
 
-                
+
+
+
+
+
+
 
 
         }

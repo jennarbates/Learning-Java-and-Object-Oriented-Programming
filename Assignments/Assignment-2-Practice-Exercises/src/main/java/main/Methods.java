@@ -3,6 +3,7 @@ package main;
 
 public class Methods
 {
+    private static final double FEET_TO_METERS_CONVERSION = 0.09290304;
 
     public int calcDiff(int x, int y)
     {
@@ -22,7 +23,7 @@ public class Methods
 
     public double convertFtToMeters(double feet)
     {
-        return feet * 0.09290304;
+        return feet * FEET_TO_METERS_CONVERSION;
     }
 
 
