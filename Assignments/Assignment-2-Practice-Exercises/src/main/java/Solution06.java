@@ -47,15 +47,19 @@ public class Solution06
     {
         return Math.abs(x - y);
     }
+
     public static String makeInputRequestString(String request)
     {
         return "Please input " + request;
     }
+
     private static int getUserInt(String request)
     {
         System.out.println(makeInputRequestString(request));
         return kb.nextInt();
     }
+
+
 
     public static void main(String[] args)
     {
