@@ -27,7 +27,7 @@ public class Application
 
     public static void main(String[] args)
     {
-        //insert selection menu
+        //insert selection menu here
 
         int userSelection = getUserInt(" your selection");
         switch(userSelection)
@@ -53,16 +53,78 @@ public class Application
 
             //exercise07
             case 2:
+                int loopy = 0;
+                while(loopy == 0)
+                {
+                    System.out.println("Would you like your area in\n 1.Meters\n 2.Feet");
+                    int unitChoice = getUserInt(" your selection");
+                    while(unitChoice == 1 || unitChoice == 2)
+                    {
+                        switch (unitChoice)
+                        {
+                            //meters
+                            case 1:
+                                double lengthM = getUserDouble(" the length in meters");
+                                double widthM = getUserDouble(" the width in meters");
+                                System.out.println("You entered dimensions of " + lengthM + " m by " + widthM + " m");
+                                double areaM = method.calcArea(lengthM, widthM);
+                                System.out.println("The area is " + areaM + " square meters.");
+                                break;
 
-                double lengthFt = getUserDouble(" the length in feet");
-                double widthFt = getUserDouble(" the width in feet");
-                System.out.println("You entered dimensions of " + lengthFt + " ft by " + widthFt + " ft.");
+                            //feet
+                            case 2:
+                                double lengthFt = getUserDouble(" the length in feet");
+                                double widthFt = getUserDouble(" the width in feet");
+                                System.out.println("You entered dimensions of " + lengthFt + " ft by " + widthFt + " ft.");
+                                double areaFt = method.calcArea(lengthFt, widthFt);
+                                System.out.println("The area is " + areaFt + " square feet.");
+                                break;
+                        }
+                    }
 
-                double areaFt = method.calcArea(lengthFt, widthFt);
-                System.out.println("The area is " + areaFt + " square feet.");
 
-                double lengthM = method.convertFtToMeters(lengthFt);
-                double widthM = method.convertFtToMeters(widthFt);
+                    System.out.println("Would you like to do a conversion? Press 1 for yes and 2 for no.");
+                    switch(unitChoice)
+                    {
+                        //yes to conversion
+                        case 1:
+                            //meters to feet
+                            if(unitChoice == 1)
+                            {
+
+                            }
+                            //feet to meters
+                            else if(unitChoice == 2)
+                            {
+
+                            }
+                            //somehow neither feet nor meters
+                            else
+                            {
+                                System.out.println("Error Code 1");
+                                loopy = 1;
+                                break;
+                            }
+                            break;
+
+                        //no to conversion
+                        case 2:
+                            break;
+                        default:
+                            System.out.println("Sorry that's an invalid option. Exiting...");
+                            loopy = 1;
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
 
                 double areaM = method.calcArea(lengthM, widthM);
                 System.out.println("The area in meters is " + areaM + " square meters.");

@@ -18,7 +18,6 @@ public class Methods
     public String makeInputRequestString(String request)
     {
         return "Please input " + request;
-
     }
 
     public double calcArea(double length, double width)
