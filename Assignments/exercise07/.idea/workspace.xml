@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec2ed4f3-7335-4294-b4cc-7349187f31e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Assignment-2-Practice-Exercises/src/main/java/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-2-Practice-Exercises/src/main/java/main/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-2-Practice-Exercises/src/main/java/main/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-2-Practice-Exercises/src/main/java/main/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +79,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment-2-Practice-Exercises" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
@@ -128,6 +131,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -8,7 +8,7 @@ package main;
 
 public class Methods
 {
-    private static final double FEET_TO_METERS_CONVERSION = 0.09290304;
+    private static final double FEET_AND_METERS_CONVERSION = 0.09290304;
 
     public int calcDiff(int x, int y)
     {
@@ -27,8 +27,17 @@ public class Methods
 
     public double convertFtToMeters(double feet)
     {
-        return feet * FEET_TO_METERS_CONVERSION;
+        return feet * FEET_AND_METERS_CONVERSION;
     }
+    public double convertMetersToFeet(double meters)
+    {
+        return meters / FEET_AND_METERS_CONVERSION;
+    }
+    public double convertArea()
+    {
+
+    }
+
 
     public double[] getDimensions(double length, double width)
     {

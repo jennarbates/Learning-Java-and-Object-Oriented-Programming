@@ -80,8 +80,6 @@ public class Application
                                 break;
                         }
                     }
-
-
                     System.out.println("Would you like to do a conversion? Press 1 for yes and 2 for no.");
                     switch(unitChoice)
                     {
@@ -90,12 +88,13 @@ public class Application
                             //meters to feet
                             if(unitChoice == 1)
                             {
-
+                                double m2fArea =
+                                System.out.println(area + "square meters is equal to " +);
                             }
                             //feet to meters
                             else if(unitChoice == 2)
                             {
-
+                                double f2mArea = ;
                             }
                             //somehow neither feet nor meters
                             else
