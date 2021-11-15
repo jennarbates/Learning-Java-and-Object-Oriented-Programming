@@ -43,8 +43,32 @@ import java.util.Scanner;
 public class Solution07
 {
     public static void main( String []args){
+
         Scanner kb = new Scanner(System.in);
-        System.out.println("Hello");
+        System.out.println("Hello, what is the length in feet?");
+        double length = kb.nextDouble();
+        System.out.println("Now what is the width in feet?");
+        double width = kb.nextDouble();
+
+        System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.");
+
+        double areaFeet = 0;
+        //areaFeet = calculateArea(length, width);
+        System.out.println("The area in feet is: " +  areaFeet);
+
+        double lengthMeters = 0;
+        double widthMeters = 0;
+        //lengthMeters = convertFeetToMeters(length);
+        //widthMeters = convertFeetToMeters(width);
+
+        double areaMeters = 0;
+        //areaMeters = calculateArea(lengthMeters, widthMeters);
+        System.out.println("The area in meters is: " +  areaMeters);
+
+
+
+
+
 
     }
 
