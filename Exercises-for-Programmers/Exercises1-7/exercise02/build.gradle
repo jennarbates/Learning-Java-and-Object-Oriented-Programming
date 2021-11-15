@@ -25,5 +25,5 @@ run {
 }
 
 application {
-    mainClassName = "exercise02.Solution02"
+    mainClassName = "exercise07.Solution07"
 }
