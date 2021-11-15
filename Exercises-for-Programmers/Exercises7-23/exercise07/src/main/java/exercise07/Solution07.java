@@ -40,8 +40,10 @@ package exercise07;
 
 import java.util.Scanner;
 
-public class Solution07
-{
+public class Solution07 {
+
+
+
     public static void main( String []args){
 
         Scanner kb = new Scanner(System.in);
@@ -52,26 +54,27 @@ public class Solution07
 
         System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.");
 
-        double areaFeet = 0;
-        //areaFeet = calculateArea(length, width);
+        double areaFeet = calculateArea(length, width);
         System.out.println("The area in feet is: " +  areaFeet);
 
-        double lengthMeters = 0;
-        double widthMeters = 0;
-        //lengthMeters = convertFeetToMeters(length);
-        //widthMeters = convertFeetToMeters(width);
+        double lengthMeters = convertFeetToMeters(length);
+        double widthMeters = convertFeetToMeters(width);
 
-        double areaMeters = 0;
-        //areaMeters = calculateArea(lengthMeters, widthMeters);
+        double areaMeters = calculateArea(lengthMeters, widthMeters);
         System.out.println("The area in meters is: " +  areaMeters);
 
     }
 
-    public double calculateArea(double length, double width){
-
+    public static double calculateArea(double length, double width){
         return length * width;
+    }
+    public static double convertFeetToMeters(double feet){
+        final double FEET_TO_METERS = 3.280839895;
+        return feet/(FEET_TO_METERS);
 
     }
+
+
 
 
 }
