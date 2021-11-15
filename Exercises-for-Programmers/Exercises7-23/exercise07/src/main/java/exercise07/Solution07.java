@@ -23,7 +23,7 @@ Prompt user for width in feet
 scan for width and store as double
 Calculate area
 print area with formatting for decimals in sq feet
-convert dimensions to meters
+convert dimensions to Meters
 calculate area
 print area with formatting for decimals in sq meters
 
@@ -65,10 +65,11 @@ public class Solution07
         //areaMeters = calculateArea(lengthMeters, widthMeters);
         System.out.println("The area in meters is: " +  areaMeters);
 
+    }
 
+    public double calculateArea(double length, double width){
 
-
-
+        return length * width;
 
     }
 
