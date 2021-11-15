@@ -4,45 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="761aef94-28c1-4857-b0e0-7a9237018cd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Learning-Java-and-Object-Oriented-Programming.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Exercises-for-Programmers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/exercise07/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/exercise07/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/exercise07/src/main/java/exercise07/Solution07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercises7-23/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise01/build/classes/java/main/exercise01/Solution01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise01/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises1-7/exercise02/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise03/build/classes/java/main/exercise03/Solution03.class" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises1-7/exercise03/build/classes/java/main/exercise03/Solution03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise03/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises1-7/exercise03/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise05/build/classes/java/main/exercise05/Solution05.class" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises1-7/exercise05/build/classes/java/main/exercise05/Solution05.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises1-7/exercise05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises1-7/exercise05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/build/classes/java/main/exercise01/Solution01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises7-23/exercise01/src/main/java/exercise01/Solution01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/build/classes/java/main/main/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/build/classes/java/main/main/Methods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+    <list default="true" id="761aef94-28c1-4857-b0e0-7a9237018cd0" name="Changes" comment="Solution7 Setup and restart">
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises7-23/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +164,21 @@
       <option name="presentableId" value="Default" />
       <updated>1636937565251</updated>
     </task>
+    <task id="LOCAL-00001" summary="Solution7 Setup and restart">
+      <created>1636938783226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636938783226</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Solution7 Setup and restart">
+      <created>1636938829232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636938829232</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,5 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Solution7 Setup and restart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution7 Setup and restart" />
   </component>
 </project>
