@@ -1,3 +1,8 @@
+/* Jenna Bates
+ * Dr. Steinberg
+ * COP3330 Spring 2022
+ * Programming Assignment 1
+ */
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,8 +19,7 @@ public class RockPaperScissor {
             "choose rock, paper, or scissor. After we made a decision, we will then reveal the choices we both made and \n" +
             "decide a winner based on these rules. Rock beats Scissor! Paper beats Rock! Scissor beats Paper! If we both \n" +
             "pick the same option, then it is a tie. Ready to play? Here we go! I've been told by users that I'm really good!";
-
-
+    
     public RockPaperScissor(){
         super();
         //ask about using this() in default constructor & as a method
@@ -45,22 +49,22 @@ public class RockPaperScissor {
     public void playRound(){
         int computerWins = 0;
         int userWins = 0;
-        System.out.println("Welcome to game " + game + "!");
-        while(userWins < 3 && computerWins < 3){
+        //System.out.println("Welcome to game " + game + "!");
+        System.out.println("Game " + game + " Tally\n Player 1:     " + userWins + "\n Player 2:     " + computerWins);
+        //while(userWins < 3 && computerWins < 3){
             switch( choiceBattle( userChoice(),computerChoice()) ){
-            case 0: System.out.println("It was a tie!");
+            case 0: //System.out.println("Tie!");
                 break;
             case 1: userWins++;
-                System.out.println("You won!");
+                //System.out.println("Congratulations! You beat me!");
                 break;
            case 2: computerWins++;
-                System.out.println("You Lost!");
+                //System.out.println("Sorry! You didn't win!");
                 break;
             //ask about if throwing an exception in the default case makes sense
             }
-
-        }
-
+        //}
+        game++;
     }
 
     // Returns: tie = 0, user/p1 win = 1,computer/p2 win = 2
@@ -75,12 +79,12 @@ public class RockPaperScissor {
         else{
                     //p1 wins
                     if( (p1 == 3 && p2 == 1) || (p1 == 1 && p2 == 3) || (p1 == 3 && p2 == 2)) {
-                        System.out.println(readChoice(p1) + " beats " + readChoice(p2));
+                        System.out.println(readChoice(p1) + " beats " + readChoice(p2) + "\n Player 1 gets a point.");
                         result = 1;
                     }
                     //p1 loses
                     else {
-                        System.out.println(readChoice(p2) + " beats " + readChoice(p1));
+                        System.out.println(readChoice(p2) + " beats " + readChoice(p1) + "\n Player 2 gets a point.");
                         result = 2;
                     }
             }
@@ -94,7 +98,7 @@ public class RockPaperScissor {
                 break;
             case 2: choiceAsString = "paper";
                 break;
-            case 3: choiceAsString = "scissors";
+            case 3: choiceAsString = "scissor";
                 break;
             default:
                 choiceAsString = "ERROR";
@@ -106,8 +110,9 @@ public class RockPaperScissor {
     public int userChoice(){
         int choice = -1;
         while(true) {
-            System.out.println("Please make a choice:\n    1: Rock\n    2:Paper\n    3:Scissors");
+            System.out.println("It is your turn to choose.\n1: Rock\n2: Paper\n3: Scissors\nEnter your choice: ");
             choice = input.nextInt();
+            System.out.println("You have selected " + readChoice(choice) + ".");
             if (choice == 1 || choice == 2 || choice == 3) {
                 return choice;
             }
@@ -131,9 +136,3 @@ public class RockPaperScissor {
             return -1;
     }
         }
-
-
-
-
-
-
