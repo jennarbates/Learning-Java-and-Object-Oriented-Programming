@@ -45,9 +45,8 @@ public class RockPaperScissor {
     public void playRound(){
         int computerWins = 0;
         int userWins = 0;
-        int round = 0;
         System.out.println("Welcome to game " + game + "!");
-        while(round<3){
+        while(userWins < 3 && computerWins < 3){
             switch( choiceBattle( userChoice(),computerChoice()) ){
             case 0: //tie;
                 break;
@@ -57,15 +56,10 @@ public class RockPaperScissor {
                 break;
             //ask about if throwing an exception in the default case makes sense
             }
-            round++;
-            if(computerWins == userWins && round == 3)
-            {
-                round--;
-            }
+
         }
 
     }
-
 
     // Returns: tie = 0, user/p1 win = 1,computer/p2 win = 2
     public int choiceBattle(int p1, int p2){
