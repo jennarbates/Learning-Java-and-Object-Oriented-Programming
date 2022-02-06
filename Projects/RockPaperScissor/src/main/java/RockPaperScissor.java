@@ -101,6 +101,19 @@ public class RockPaperScissor {
 
     }
 
+    public int userChoice(){
+        int choice = -1;
+        while(true)
+        System.out.println("Please make a choice:\n    1: Rock\n    2:Paper\n    3:Scissors");
+        choice = input.nextInt();
+        if(choice == 1 || choice == 2 || choice == 3)
+        {
+            return choice;
+        }
+        System.out.println("That is an invalid choice. Please try again");
+    }
+
+    
         }
 
 
