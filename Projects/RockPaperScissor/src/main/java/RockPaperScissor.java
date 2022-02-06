@@ -113,7 +113,11 @@ public class RockPaperScissor {
         System.out.println("That is an invalid choice. Please try again");
     }
 
-    
+    public int computerChoice(){
+        int choice = -1;
+        choice = rand.nextInt(3) + 1;
+        return choice;
+    }
         }
 
 
