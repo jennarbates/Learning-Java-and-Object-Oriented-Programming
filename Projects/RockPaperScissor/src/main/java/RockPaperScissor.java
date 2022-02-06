@@ -119,12 +119,15 @@ public class RockPaperScissor {
         return choice;
     }
 
+    //
     public int getWinner(){
         // user wins = 1, computer wins = 2
         if(userWins > computerWins)
             return 1;
-        else
+        else if(computerWins > userWins)
             return 2;
+        else
+            return -1;
     }
 
 
