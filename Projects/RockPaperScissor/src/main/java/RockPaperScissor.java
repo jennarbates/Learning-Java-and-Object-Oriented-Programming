@@ -5,8 +5,9 @@ public class RockPaperScissor {
     private int userWins;
     private int computerWins;
     private int game;
-    Random rand = new Random();
-    Scanner input = new Scanner(System.in);
+    Random rand;
+    private int seed;
+    Scanner input;
     private boolean playing = true;
     private int roundNum = 0;
     public static final String GREETING = "Welcome to the Rock...Paper...Scissor Game! Let me tell you the rules to this game. You and I will get to \n" +
@@ -21,21 +22,22 @@ public class RockPaperScissor {
         userWins = 0;
         computerWins = 0;
         game = 1;
-    }
-    public RockPaperScissor(int userWins, int computerWins){
-        super();
-        this.userWins = userWins;
-        this.computerWins = computerWins;
-        this.game = 0;
-    }
-    public RockPaperScissor(int userWins, int computerWins, int game){
-        super();
-        this.userWins = userWins;
-        this.computerWins = computerWins;
-        this.game = game;
+        this.rand = new Random();
     }
 
-    //methods
+    public RockPaperScissor(int game, int seed, Scanner input){
+        super();
+        userWins = 0;
+        computerWins = 0;
+        game = 1;
+        seed = 1;
+        this.game = game;
+        this.seed = seed;
+        this.input = input;
+        this.rand = new Random(seed);
+    }
+
+
 
     public static void greeting(){
         System.out.println(GREETING);
