@@ -48,11 +48,13 @@ public class RockPaperScissor {
         System.out.println("Welcome to game " + game + "!");
         while(userWins < 3 && computerWins < 3){
             switch( choiceBattle( userChoice(),computerChoice()) ){
-            case 0: //tie;
+            case 0: System.out.println("It was a tie!");
                 break;
             case 1: userWins++;
+                System.out.println("You won!");
                 break;
            case 2: computerWins++;
+                System.out.println("You Lost!");
                 break;
             //ask about if throwing an exception in the default case makes sense
             }
