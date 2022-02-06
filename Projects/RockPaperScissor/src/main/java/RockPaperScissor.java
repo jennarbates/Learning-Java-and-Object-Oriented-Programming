@@ -44,6 +44,7 @@ public class RockPaperScissor {
     public void playRound(){
         int computerWins = 0;
         int userWins = 0;
+        int round = 0;
         System.out.println("Welcome to game " + game + "!");
         while(round<3){
             //switch( choiceBattle(userChoice(),computerChoice()) ){
@@ -59,4 +60,51 @@ public class RockPaperScissor {
         }
     }
 
-}
+
+    //rock = 1, paper = 2, scissors = 3
+    public int choiceBattle(int p1, int p2){
+        // tie = 0, user/p1 win = 1,computer/p2 win = 2
+        int result = -1;
+        System.out.println("You used " + readChoice(p1) + " and I used " + "!");
+        if(p1 == p2){
+            result = 0;
+            System.out.println("It's a tie!");
+            }
+        else{
+                    //p1 wins
+                    if( (p1 == 3 && p2 == 1) || (p1 == 1 && p2 == 3) || (p1 == 3 && p2 == 2)) {
+                        System.out.println(readChoice(p1) + " beats " + readChoice(p2));
+                        result = 1;
+                    }
+                    //p1 loses
+                    else {
+                        System.out.println(readChoice(p2) + " beats " + readChoice(p1));
+                        result = 2;
+                    }
+            }
+        return result;
+        }
+
+    public String readChoice(int choice){
+        String choiceAsString;
+        switch (choice){
+            case 1: choiceAsString = "rock";
+                break;
+            case 2: choiceAsString = "paper";
+                break;
+            case 3: choiceAsString = "scissors";
+                break;
+            default:
+                choiceAsString = "ERROR";
+        }
+        return choiceAsString;
+
+    }
+
+        }
+
+
+
+
+
+
