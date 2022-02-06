@@ -48,23 +48,23 @@ public class RockPaperScissor {
         int round = 0;
         System.out.println("Welcome to game " + game + "!");
         while(round<3){
-            //switch( choiceBattle(userChoice(),computerChoice()) ){
-            //case 0: tie;
-                //break;
-            //case 1: user;
-                //break;
-           //case 2: pc;
-                //break;
+            switch( choiceBattle( userChoice(),computerChoice()) ){
+            case 0: //tie;
+                break;
+            case 1: //user;
+                break;
+           case 2: //pc;
+                break;
             //ask about if throwing an exception in the default case makes sense
-           // }
+            }
             round++;
         }
     }
 
-    //rock = 1, paper = 2, scissors = 3
+
+    // Returns: tie = 0, user/p1 win = 1,computer/p2 win = 2
     public int choiceBattle(int p1, int p2){
-        // tie = 0, user/p1 win = 1,computer/p2 win = 2
-        int result = -1;
+        //rock = 1, paper = 2, scissors = 3
         System.out.println("You used " + readChoice(p1) + " and I used " + "!");
         if(p1 == p2){
             result = 0;
