@@ -66,6 +66,7 @@ public class RockPaperScissor {
     // Returns: tie = 0, user/p1 win = 1,computer/p2 win = 2
     public int choiceBattle(int p1, int p2){
         //rock = 1, paper = 2, scissors = 3
+        int result = -1;
         System.out.println("You used " + readChoice(p1) + " and I used " + "!");
         if(p1 == p2){
             result = 0;
