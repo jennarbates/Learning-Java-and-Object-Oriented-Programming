@@ -23,6 +23,7 @@ public class RockPaperScissor {
         computerWins = 0;
         game = 1;
         this.rand = new Random();
+        input = new Scanner(System.in);
     }
 
     public RockPaperScissor(int game, int seed, Scanner input){
@@ -59,7 +60,7 @@ public class RockPaperScissor {
             round++;
         }
     }
-    
+
     //rock = 1, paper = 2, scissors = 3
     public int choiceBattle(int p1, int p2){
         // tie = 0, user/p1 win = 1,computer/p2 win = 2
@@ -116,6 +117,14 @@ public class RockPaperScissor {
         int choice = -1;
         choice = rand.nextInt(3) + 1;
         return choice;
+    }
+
+    public int getWinner(){
+        // user wins = 1, computer wins = 2
+        int winner = -1;
+
+
+        return winner;
     }
         }
 
