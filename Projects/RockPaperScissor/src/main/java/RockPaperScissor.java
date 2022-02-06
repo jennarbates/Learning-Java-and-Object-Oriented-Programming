@@ -51,14 +51,19 @@ public class RockPaperScissor {
             switch( choiceBattle( userChoice(),computerChoice()) ){
             case 0: //tie;
                 break;
-            case 1: //user;
+            case 1: userWins++;
                 break;
-           case 2: //pc;
+           case 2: computerWins++;
                 break;
             //ask about if throwing an exception in the default case makes sense
             }
             round++;
+            if(computerWins == userWins && round == 3)
+            {
+                round--;
+            }
         }
+
     }
 
 
