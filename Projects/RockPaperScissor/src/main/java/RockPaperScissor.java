@@ -37,8 +37,6 @@ public class RockPaperScissor {
         this.rand = new Random(seed);
     }
 
-
-
     public static void greeting(){
         System.out.println(GREETING);
     }
@@ -61,8 +59,7 @@ public class RockPaperScissor {
             round++;
         }
     }
-
-
+    
     //rock = 1, paper = 2, scissors = 3
     public int choiceBattle(int p1, int p2){
         // tie = 0, user/p1 win = 1,computer/p2 win = 2
