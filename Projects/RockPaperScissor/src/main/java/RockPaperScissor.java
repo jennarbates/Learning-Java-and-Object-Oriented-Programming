@@ -5,9 +5,9 @@ public class RockPaperScissor {
     private int userWins;
     private int computerWins;
     private int game;
-    Random rand;
+    private Random rand;
     private int seed;
-    Scanner input;
+    private Scanner input;
     private boolean playing = true;
     private int roundNum = 0;
     public static final String GREETING = "Welcome to the Rock...Paper...Scissor Game! Let me tell you the rules to this game. You and I will get to \n" +
@@ -22,7 +22,7 @@ public class RockPaperScissor {
         userWins = 0;
         computerWins = 0;
         game = 1;
-        this.rand = new Random();
+        rand = new Random();
         input = new Scanner(System.in);
     }
 
@@ -103,14 +103,14 @@ public class RockPaperScissor {
 
     public int userChoice(){
         int choice = -1;
-        while(true)
-        System.out.println("Please make a choice:\n    1: Rock\n    2:Paper\n    3:Scissors");
-        choice = input.nextInt();
-        if(choice == 1 || choice == 2 || choice == 3)
-        {
-            return choice;
+        while(true) {
+            System.out.println("Please make a choice:\n    1: Rock\n    2:Paper\n    3:Scissors");
+            choice = input.nextInt();
+            if (choice == 1 || choice == 2 || choice == 3) {
+                return choice;
+            }
+            System.out.println("That is an invalid choice. Please try again");
         }
-        System.out.println("That is an invalid choice. Please try again");
     }
 
     public int computerChoice(){
@@ -126,6 +126,9 @@ public class RockPaperScissor {
 
         return winner;
     }
+
+
+
         }
 
 
