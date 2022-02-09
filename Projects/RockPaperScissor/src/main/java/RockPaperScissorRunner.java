@@ -1,7 +1,4 @@
-/* Dr. Steinberg
- * COP3330 Object Oriented Programming
- * Spring 2022
- * Programming Assignment 1 Runner File
+/* CHANGES NOT ALLOWED
  */
 
 import java.util.Scanner;
