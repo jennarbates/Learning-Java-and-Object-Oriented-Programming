@@ -12,3 +12,9 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+Projects/RockPaperScissor/src/test
+Projects/RockPaperScissor/src/main/java/RockPaperScissorRunner
+Projects/RockPaperScissor/src/main/java/samplesolutionp1
+Projects/RockPaperScissor/src/main/java/program1solution_student_output
+Projects/RockPaperScissor/src/main/java/p1testscript
