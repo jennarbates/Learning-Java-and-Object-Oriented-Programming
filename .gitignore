@@ -18,3 +18,8 @@ Projects/RockPaperScissor/src/main/java/RockPaperScissorRunner
 Projects/RockPaperScissor/src/main/java/samplesolutionp1
 Projects/RockPaperScissor/src/main/java/program1solution_student_output
 Projects/RockPaperScissor/src/main/java/p1testscript
+
+/.idea/
+/gradle/
+/gradlew/
+/gradlew.bat
