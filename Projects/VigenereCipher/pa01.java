@@ -12,6 +12,8 @@
 | where kX.txt is the keytext file
 | and pX.txt is plaintext file
 |
+|Needs to compile from the command line with the following command: prompt$javac pa01.java
+|
 | Note: All input files are simple 8 bit ASCII input
 |
 | Class: CIS3360 - Security in Computing - Spring 2022
