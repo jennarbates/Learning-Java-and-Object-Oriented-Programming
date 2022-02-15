@@ -34,7 +34,7 @@ public class TextAnalysis{
 
     //This non-static method will display the content of text document stored in the class object data attribute. Each sentence will be displayed on its own line.
     public void display(){
-        for(int i = 0; i<this.data.length(); i++){
+        for(int i = 0; i<this.limit); i++){
             System.out.println(this.data[i]);
         }
     }
@@ -48,6 +48,7 @@ public class TextAnalysis{
     // The result of each sentence will be stored in the wordsize attribute. Do not count the special characters as part of the words. Your program
     //should also not count digits (101, 555, etc...). This information will get displayed in tableDisplay()
     public void letterAnalysis(){
+
 
     }
 
