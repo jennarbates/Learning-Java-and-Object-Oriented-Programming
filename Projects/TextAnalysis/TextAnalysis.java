@@ -34,7 +34,9 @@ public class TextAnalysis{
 
     //This non-static method will display the content of text document stored in the class object data attribute. Each sentence will be displayed on its own line.
     public void display(){
-
+        for(int i = 0; i<this.data.length(); i++){
+            System.out.println(this.data[i]);
+        }
     }
 
     //This non-static method will display the content of the analyses done in the text stored for the respective class object in a simple table format.
