@@ -3,3 +3,8 @@
  * COP3330 Spring 2022
  * Programming Assignment 2
  */
+
+public class TextAnalysis{
+    
+
+}
