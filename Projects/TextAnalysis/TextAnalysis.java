@@ -24,7 +24,7 @@ public class TextAnalysis{
     // Important: You can assume that there will only be sentences that have no more than 30 words
     private int[] wordcount;
 
-    //his attribute stores the max number of sentences to observe for the class object. Each class object will have a different limit.
+    // "This attribute stores the max number of sentences to observe for the class object. Each class object will have a different limit."
     private int limit;
 
 
