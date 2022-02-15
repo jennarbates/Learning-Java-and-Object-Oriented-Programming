@@ -29,7 +29,8 @@ public class TextAnalysis{
 
 
     public TextAnalysis(int limit, String[] data){
-
+        this.limit = limit;
+        this.data = data;
     }
 
 }
